@@ -15,10 +15,9 @@ function ReduxApp(props) {
     console.log("logging from old_redux", store);
     console.log("getState", store.getState());
     // can trigger increment by calling dispatch method directly
-    /*
-    store.dispatch(increment);
-    console.log("getState", store.getState());
-    */
+
+    // we cam dispatch event here as well store.dispatch(increment);
+    // logging store console.log("getState", store.getState());
   }, [text]);
 
   const onChangeText = (e) => {
